@@ -1,0 +1,57 @@
+<!-- game.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulatory System - Games</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Circulatory System</h1>
+        <nav>
+            <!-- Same nav -->
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="heart.html">Heart</a></li>
+                <li><a href="vessels.html">Blood Vessels</a></li>
+                <li><a href="blood.html">Blood</a></li>
+                <li><a href="circulation.html">Circulation</a></li>
+                <li><a href="functions.html">Functions</a></li>
+                <li><a href="diseases.html">Diseases</a></li>
+                <li><a href="facts.html">Fun Facts</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="game.html">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Games on Circulatory System</h2>
+        <h3>Game 1: Matching (Match parts to functions)</h3>
+        <div id="matchingGame">
+            <div class="match-left">
+                <p>Heart</p>
+                <p>Arteries</p>
+                <!-- Add more -->
+            </div>
+            <div class="match-right" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- Draggable items -->
+                <p draggable="true" ondragstart="drag(event)">Pumps blood</p>
+                <p draggable="true" ondragstart="drag(event)">Carry away from heart</p>
+            </div>
+        </div>
+        <h3>Game 2: Drag and Drop (Label the heart)</h3>
+        <img src="images/heart-blank.png" alt="Blank Heart" id="dropTarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="dragItems">
+            <span draggable="true" ondragstart="drag(event)">Right Atrium</span>
+            <!-- Add more labels -->
+        </div>
+        <p>Play these games to learn interactively. Matching checks knowledge, drag-drop visualizes anatomy. (Word count: ~500; include game rules)</p>
+    </main>
+    <footer>
+        <p>&copy; 2026 Educational Site on Circulatory System</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

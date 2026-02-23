@@ -1,0 +1,69 @@
+/* css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffdddd, #ddffff); /* Unique gradient */
+    animation: pulse 5s infinite; /* Pulsing effect for heartbeat feel */
+}
+
+@keyframes pulse {
+    0% { background-color: #ffdddd; }
+    50% { background-color: #ddffff; }
+    100% { background-color: #ffdddd; }
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.question {
+    margin: 10px 0;
+}
+
+/* Styles for games */
+.match-left, .match-right {
+    float: left;
+    width: 45%;
+}
+
+#dropTarget {
+    border: 1px solid #000;
+}
